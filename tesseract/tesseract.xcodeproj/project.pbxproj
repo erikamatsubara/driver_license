@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02CC16998BF783DE34BD658E /* Pods_tesseractTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B8D24C4C01CFA4EA8C93DB /* Pods_tesseractTests.framework */; };
+		131ADB87E0E41908E46A4D8C /* Pods_tesseract.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D569B381B945B9C8C51329 /* Pods_tesseract.framework */; };
+		432EE42B3322B80B883315C6 /* Pods_tesseractUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896D02BA366103A6A497384E /* Pods_tesseractUITests.framework */; };
+		540EB47521C377CF002E2D33 /* County.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EB47421C377CF002E2D33 /* County.swift */; };
+		5416718A21BE371A005C2EC5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5416718921BE371A005C2EC5 /* Accelerate.framework */; };
+		5416718C21BE3727005C2EC5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5416718B21BE3727005C2EC5 /* AssetsLibrary.framework */; };
+		5416718E21BE373E005C2EC5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5416718D21BE373D005C2EC5 /* AVFoundation.framework */; };
+		5416719021BE374A005C2EC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5416718F21BE374A005C2EC5 /* CoreGraphics.framework */; };
+		5416719221BE375B005C2EC5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5416719121BE375B005C2EC5 /* CoreImage.framework */; };
+		5416719421BE3777005C2EC5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5416719321BE3777005C2EC5 /* CoreMedia.framework */; };
+		5416719621BE3783005C2EC5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5416719521BE3783005C2EC5 /* CoreVideo.framework */; };
+		5416719821BE3794005C2EC5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5416719721BE3794005C2EC5 /* QuartzCore.framework */; };
+		5416719A21BE37A9005C2EC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5416719921BE37A9005C2EC5 /* UIKit.framework */; };
+		5416719C21BE37BC005C2EC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5416719B21BE37BC005C2EC5 /* Foundation.framework */; };
+		542DABC6219E6E0C004DA8FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542DABC5219E6E0C004DA8FD /* AppDelegate.swift */; };
+		542DABC8219E6E0C004DA8FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542DABC7219E6E0C004DA8FD /* ViewController.swift */; };
+		542DABCB219E6E0C004DA8FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542DABC9219E6E0C004DA8FD /* Main.storyboard */; };
+		542DABCD219E6E0E004DA8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542DABCC219E6E0E004DA8FD /* Assets.xcassets */; };
+		542DABD0219E6E0E004DA8FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542DABCE219E6E0E004DA8FD /* LaunchScreen.storyboard */; };
+		542DABDB219E6E0E004DA8FD /* tesseractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542DABDA219E6E0E004DA8FD /* tesseractTests.swift */; };
+		542DABE6219E6E0E004DA8FD /* tesseractUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542DABE5219E6E0E004DA8FD /* tesseractUITests.swift */; };
+		542DABF5219E6F62004DA8FD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 542DABF4219E6F62004DA8FD /* libz.tbd */; };
+		544CD75021A256B00058C756 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 544CD74F21A256B00058C756 /* tessdata */; };
+		544CD75421A29BA70058C756 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544CD75321A29BA60058C756 /* Utilities.swift */; };
+		54AA3F4E21C0FED40019DF08 /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA3F4D21C0FED40019DF08 /* ReadingViewController.swift */; };
+		54B2BAAE21BE448300CAFD54 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54B2BAAD21BE448300CAFD54 /* OpenCVWrapper.mm */; };
+		54ED6D7421C22ABC006988D6 /* CameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED6D7321C22ABC006988D6 /* CameraOverlayView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		542DABD7219E6E0E004DA8FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 542DABBA219E6E0C004DA8FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 542DABC1219E6E0C004DA8FD;
+			remoteInfo = tesseract;
+		};
+		542DABE2219E6E0E004DA8FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 542DABBA219E6E0C004DA8FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 542DABC1219E6E0C004DA8FD;
+			remoteInfo = tesseract;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06B8D24C4C01CFA4EA8C93DB /* Pods_tesseractTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tesseractTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB850B492411BE6AA5D8A03 /* Pods-tesseract.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tesseract.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tesseract/Pods-tesseract.debug.xcconfig"; sourceTree = "<group>"; };
+		540EB47421C377CF002E2D33 /* County.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = County.swift; sourceTree = "<group>"; };
+		5416718921BE371A005C2EC5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		5416718B21BE3727005C2EC5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5416718D21BE373D005C2EC5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5416718F21BE374A005C2EC5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5416719121BE375B005C2EC5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		5416719321BE3777005C2EC5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5416719521BE3783005C2EC5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5416719721BE3794005C2EC5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5416719921BE37A9005C2EC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5416719B21BE37BC005C2EC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		542DABC2219E6E0C004DA8FD /* tesseract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tesseract.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		542DABC5219E6E0C004DA8FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		542DABC7219E6E0C004DA8FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		542DABCA219E6E0C004DA8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		542DABCC219E6E0E004DA8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		542DABCF219E6E0E004DA8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		542DABD1219E6E0E004DA8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542DABD6219E6E0E004DA8FD /* tesseractTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tesseractTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		542DABDA219E6E0E004DA8FD /* tesseractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tesseractTests.swift; sourceTree = "<group>"; };
+		542DABDC219E6E0E004DA8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542DABE1219E6E0E004DA8FD /* tesseractUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tesseractUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		542DABE5219E6E0E004DA8FD /* tesseractUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tesseractUITests.swift; sourceTree = "<group>"; };
+		542DABE7219E6E0E004DA8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542DABF4219E6F62004DA8FD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		544CD74F21A256B00058C756 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		544CD75321A29BA60058C756 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		54AA3F4D21C0FED40019DF08 /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
+		54B2BAAC21BE448300CAFD54 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		54B2BAAD21BE448300CAFD54 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		54B2BAAF21BE457200CAFD54 /* tesseract-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tesseract-Bridging-Header.h"; sourceTree = "<group>"; };
+		54ED6D7321C22ABC006988D6 /* CameraOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOverlayView.swift; sourceTree = "<group>"; };
+		81F2AD97D13BAF647F8C1062 /* Pods-tesseractUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tesseractUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tesseractUITests/Pods-tesseractUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		896D02BA366103A6A497384E /* Pods_tesseractUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tesseractUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9070692115C5DA78BCE35623 /* Pods-tesseractTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tesseractTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tesseractTests/Pods-tesseractTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B73AEC25C0CD090051906F38 /* Pods-tesseract.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tesseract.release.xcconfig"; path = "Pods/Target Support Files/Pods-tesseract/Pods-tesseract.release.xcconfig"; sourceTree = "<group>"; };
+		C4D569B381B945B9C8C51329 /* Pods_tesseract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tesseract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E534E6BD1C710307B0854DAB /* Pods-tesseractUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tesseractUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tesseractUITests/Pods-tesseractUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F16A16000A794AB48E0E72B6 /* Pods-tesseractTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tesseractTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tesseractTests/Pods-tesseractTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		542DABBF219E6E0C004DA8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5416719C21BE37BC005C2EC5 /* Foundation.framework in Frameworks */,
+				5416719A21BE37A9005C2EC5 /* UIKit.framework in Frameworks */,
+				5416719821BE3794005C2EC5 /* QuartzCore.framework in Frameworks */,
+				5416719621BE3783005C2EC5 /* CoreVideo.framework in Frameworks */,
+				5416719421BE3777005C2EC5 /* CoreMedia.framework in Frameworks */,
+				5416719221BE375B005C2EC5 /* CoreImage.framework in Frameworks */,
+				5416719021BE374A005C2EC5 /* CoreGraphics.framework in Frameworks */,
+				5416718E21BE373E005C2EC5 /* AVFoundation.framework in Frameworks */,
+				5416718C21BE3727005C2EC5 /* AssetsLibrary.framework in Frameworks */,
+				5416718A21BE371A005C2EC5 /* Accelerate.framework in Frameworks */,
+				542DABF5219E6F62004DA8FD /* libz.tbd in Frameworks */,
+				131ADB87E0E41908E46A4D8C /* Pods_tesseract.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542DABD3219E6E0E004DA8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CC16998BF783DE34BD658E /* Pods_tesseractTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542DABDE219E6E0E004DA8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432EE42B3322B80B883315C6 /* Pods_tesseractUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		542DABB9219E6E0C004DA8FD = {
+			isa = PBXGroup;
+			children = (
+				542DABC4219E6E0C004DA8FD /* tesseract */,
+				542DABD9219E6E0E004DA8FD /* tesseractTests */,
+				542DABE4219E6E0E004DA8FD /* tesseractUITests */,
+				542DABC3219E6E0C004DA8FD /* Products */,
+				542DABF3219E6F62004DA8FD /* Frameworks */,
+				DCA100790CD9FDB7B491A4FB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		542DABC3219E6E0C004DA8FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				542DABC2219E6E0C004DA8FD /* tesseract.app */,
+				542DABD6219E6E0E004DA8FD /* tesseractTests.xctest */,
+				542DABE1219E6E0E004DA8FD /* tesseractUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		542DABC4219E6E0C004DA8FD /* tesseract */ = {
+			isa = PBXGroup;
+			children = (
+				54B2BAAF21BE457200CAFD54 /* tesseract-Bridging-Header.h */,
+				544CD74F21A256B00058C756 /* tessdata */,
+				542DABC5219E6E0C004DA8FD /* AppDelegate.swift */,
+				542DABC7219E6E0C004DA8FD /* ViewController.swift */,
+				54AA3F4D21C0FED40019DF08 /* ReadingViewController.swift */,
+				540EB47421C377CF002E2D33 /* County.swift */,
+				54ED6D7321C22ABC006988D6 /* CameraOverlayView.swift */,
+				542DABC9219E6E0C004DA8FD /* Main.storyboard */,
+				542DABCC219E6E0E004DA8FD /* Assets.xcassets */,
+				542DABCE219E6E0E004DA8FD /* LaunchScreen.storyboard */,
+				542DABD1219E6E0E004DA8FD /* Info.plist */,
+				544CD75321A29BA60058C756 /* Utilities.swift */,
+				54B2BAAC21BE448300CAFD54 /* OpenCVWrapper.h */,
+				54B2BAAD21BE448300CAFD54 /* OpenCVWrapper.mm */,
+			);
+			path = tesseract;
+			sourceTree = "<group>";
+		};
+		542DABD9219E6E0E004DA8FD /* tesseractTests */ = {
+			isa = PBXGroup;
+			children = (
+				542DABDA219E6E0E004DA8FD /* tesseractTests.swift */,
+				542DABDC219E6E0E004DA8FD /* Info.plist */,
+			);
+			path = tesseractTests;
+			sourceTree = "<group>";
+		};
+		542DABE4219E6E0E004DA8FD /* tesseractUITests */ = {
+			isa = PBXGroup;
+			children = (
+				542DABE5219E6E0E004DA8FD /* tesseractUITests.swift */,
+				542DABE7219E6E0E004DA8FD /* Info.plist */,
+			);
+			path = tesseractUITests;
+			sourceTree = "<group>";
+		};
+		542DABF3219E6F62004DA8FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5416719B21BE37BC005C2EC5 /* Foundation.framework */,
+				5416719921BE37A9005C2EC5 /* UIKit.framework */,
+				5416719721BE3794005C2EC5 /* QuartzCore.framework */,
+				5416719521BE3783005C2EC5 /* CoreVideo.framework */,
+				5416719321BE3777005C2EC5 /* CoreMedia.framework */,
+				5416719121BE375B005C2EC5 /* CoreImage.framework */,
+				5416718F21BE374A005C2EC5 /* CoreGraphics.framework */,
+				5416718D21BE373D005C2EC5 /* AVFoundation.framework */,
+				5416718B21BE3727005C2EC5 /* AssetsLibrary.framework */,
+				5416718921BE371A005C2EC5 /* Accelerate.framework */,
+				542DABF4219E6F62004DA8FD /* libz.tbd */,
+				C4D569B381B945B9C8C51329 /* Pods_tesseract.framework */,
+				06B8D24C4C01CFA4EA8C93DB /* Pods_tesseractTests.framework */,
+				896D02BA366103A6A497384E /* Pods_tesseractUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCA100790CD9FDB7B491A4FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AB850B492411BE6AA5D8A03 /* Pods-tesseract.debug.xcconfig */,
+				B73AEC25C0CD090051906F38 /* Pods-tesseract.release.xcconfig */,
+				9070692115C5DA78BCE35623 /* Pods-tesseractTests.debug.xcconfig */,
+				F16A16000A794AB48E0E72B6 /* Pods-tesseractTests.release.xcconfig */,
+				81F2AD97D13BAF647F8C1062 /* Pods-tesseractUITests.debug.xcconfig */,
+				E534E6BD1C710307B0854DAB /* Pods-tesseractUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		542DABC1219E6E0C004DA8FD /* tesseract */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542DABEA219E6E0E004DA8FD /* Build configuration list for PBXNativeTarget "tesseract" */;
+			buildPhases = (
+				C705EDA702A4D668419CAC2C /* [CP] Check Pods Manifest.lock */,
+				542DABBE219E6E0C004DA8FD /* Sources */,
+				542DABBF219E6E0C004DA8FD /* Frameworks */,
+				542DABC0219E6E0C004DA8FD /* Resources */,
+				1A4874F4678FC87C1FD99C19 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tesseract;
+			productName = tesseract;
+			productReference = 542DABC2219E6E0C004DA8FD /* tesseract.app */;
+			productType = "com.apple.product-type.application";
+		};
+		542DABD5219E6E0E004DA8FD /* tesseractTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542DABED219E6E0E004DA8FD /* Build configuration list for PBXNativeTarget "tesseractTests" */;
+			buildPhases = (
+				1FE1892995B30EA18C2A8914 /* [CP] Check Pods Manifest.lock */,
+				542DABD2219E6E0E004DA8FD /* Sources */,
+				542DABD3219E6E0E004DA8FD /* Frameworks */,
+				542DABD4219E6E0E004DA8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				542DABD8219E6E0E004DA8FD /* PBXTargetDependency */,
+			);
+			name = tesseractTests;
+			productName = tesseractTests;
+			productReference = 542DABD6219E6E0E004DA8FD /* tesseractTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		542DABE0219E6E0E004DA8FD /* tesseractUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542DABF0219E6E0E004DA8FD /* Build configuration list for PBXNativeTarget "tesseractUITests" */;
+			buildPhases = (
+				EE59DFE5430596DE2A0A4774 /* [CP] Check Pods Manifest.lock */,
+				542DABDD219E6E0E004DA8FD /* Sources */,
+				542DABDE219E6E0E004DA8FD /* Frameworks */,
+				542DABDF219E6E0E004DA8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				542DABE3219E6E0E004DA8FD /* PBXTargetDependency */,
+			);
+			name = tesseractUITests;
+			productName = tesseractUITests;
+			productReference = 542DABE1219E6E0E004DA8FD /* tesseractUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		542DABBA219E6E0C004DA8FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "株式会社JOB HUB";
+				TargetAttributes = {
+					542DABC1219E6E0C004DA8FD = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					542DABD5219E6E0E004DA8FD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 542DABC1219E6E0C004DA8FD;
+					};
+					542DABE0219E6E0E004DA8FD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 542DABC1219E6E0C004DA8FD;
+					};
+				};
+			};
+			buildConfigurationList = 542DABBD219E6E0C004DA8FD /* Build configuration list for PBXProject "tesseract" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 542DABB9219E6E0C004DA8FD;
+			productRefGroup = 542DABC3219E6E0C004DA8FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				542DABC1219E6E0C004DA8FD /* tesseract */,
+				542DABD5219E6E0E004DA8FD /* tesseractTests */,
+				542DABE0219E6E0E004DA8FD /* tesseractUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		542DABC0219E6E0C004DA8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542DABD0219E6E0E004DA8FD /* LaunchScreen.storyboard in Resources */,
+				542DABCD219E6E0E004DA8FD /* Assets.xcassets in Resources */,
+				542DABCB219E6E0C004DA8FD /* Main.storyboard in Resources */,
+				544CD75021A256B00058C756 /* tessdata in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542DABD4219E6E0E004DA8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542DABDF219E6E0E004DA8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A4874F4678FC87C1FD99C19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tesseract/Pods-tesseract-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tesseract/Pods-tesseract-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FE1892995B30EA18C2A8914 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tesseractTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C705EDA702A4D668419CAC2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tesseract-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE59DFE5430596DE2A0A4774 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tesseractUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		542DABBE219E6E0C004DA8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544CD75421A29BA70058C756 /* Utilities.swift in Sources */,
+				542DABC8219E6E0C004DA8FD /* ViewController.swift in Sources */,
+				540EB47521C377CF002E2D33 /* County.swift in Sources */,
+				54ED6D7421C22ABC006988D6 /* CameraOverlayView.swift in Sources */,
+				54AA3F4E21C0FED40019DF08 /* ReadingViewController.swift in Sources */,
+				54B2BAAE21BE448300CAFD54 /* OpenCVWrapper.mm in Sources */,
+				542DABC6219E6E0C004DA8FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542DABD2219E6E0E004DA8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542DABDB219E6E0E004DA8FD /* tesseractTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542DABDD219E6E0E004DA8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542DABE6219E6E0E004DA8FD /* tesseractUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		542DABD8219E6E0E004DA8FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 542DABC1219E6E0C004DA8FD /* tesseract */;
+			targetProxy = 542DABD7219E6E0E004DA8FD /* PBXContainerItemProxy */;
+		};
+		542DABE3219E6E0E004DA8FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 542DABC1219E6E0C004DA8FD /* tesseract */;
+			targetProxy = 542DABE2219E6E0E004DA8FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		542DABC9219E6E0C004DA8FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542DABCA219E6E0C004DA8FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		542DABCE219E6E0E004DA8FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542DABCF219E6E0E004DA8FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		542DABE8219E6E0E004DA8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		542DABE9219E6E0E004DA8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		542DABEB219E6E0E004DA8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB850B492411BE6AA5D8A03 /* Pods-tesseract.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = AQDUQ32YLJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = tesseract/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pasonajobhub.tools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_com.pasonajobhub.tools;
+				SWIFT_OBJC_BRIDGING_HEADER = "tesseract/tesseract-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		542DABEC219E6E0E004DA8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73AEC25C0CD090051906F38 /* Pods-tesseract.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = AQDUQ32YLJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = tesseract/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pasonajobhub.tools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_com.pasonajobhub.tools;
+				SWIFT_OBJC_BRIDGING_HEADER = "tesseract/tesseract-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		542DABEE219E6E0E004DA8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9070692115C5DA78BCE35623 /* Pods-tesseractTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tesseractTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jobhub.tesseractTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tesseract.app/tesseract";
+			};
+			name = Debug;
+		};
+		542DABEF219E6E0E004DA8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16A16000A794AB48E0E72B6 /* Pods-tesseractTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tesseractTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jobhub.tesseractTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tesseract.app/tesseract";
+			};
+			name = Release;
+		};
+		542DABF1219E6E0E004DA8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81F2AD97D13BAF647F8C1062 /* Pods-tesseractUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tesseractUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jobhub.tesseractUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tesseract;
+			};
+			name = Debug;
+		};
+		542DABF2219E6E0E004DA8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E534E6BD1C710307B0854DAB /* Pods-tesseractUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tesseractUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jobhub.tesseractUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tesseract;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		542DABBD219E6E0C004DA8FD /* Build configuration list for PBXProject "tesseract" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542DABE8219E6E0E004DA8FD /* Debug */,
+				542DABE9219E6E0E004DA8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542DABEA219E6E0E004DA8FD /* Build configuration list for PBXNativeTarget "tesseract" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542DABEB219E6E0E004DA8FD /* Debug */,
+				542DABEC219E6E0E004DA8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542DABED219E6E0E004DA8FD /* Build configuration list for PBXNativeTarget "tesseractTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542DABEE219E6E0E004DA8FD /* Debug */,
+				542DABEF219E6E0E004DA8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542DABF0219E6E0E004DA8FD /* Build configuration list for PBXNativeTarget "tesseractUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542DABF1219E6E0E004DA8FD /* Debug */,
+				542DABF2219E6E0E004DA8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 542DABBA219E6E0C004DA8FD /* Project object */;
+}

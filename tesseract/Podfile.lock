@@ -1,0 +1,22 @@
+PODS:
+  - TesseractOCRiOS (5.0.1)
+
+DEPENDENCIES:
+  - TesseractOCRiOS (from `https://github.com/gali8/Tesseract-OCR-iOS.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  TesseractOCRiOS:
+    :branch: master
+    :git: https://github.com/gali8/Tesseract-OCR-iOS.git
+
+CHECKOUT OPTIONS:
+  TesseractOCRiOS:
+    :commit: 8f8ffa2da13d267361abc992282d78412e1152c7
+    :git: https://github.com/gali8/Tesseract-OCR-iOS.git
+
+SPEC CHECKSUMS:
+  TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
+
+PODFILE CHECKSUM: d358d1b0b41e7a554f1b9e63b33e07028896e391
+
+COCOAPODS: 1.5.3
